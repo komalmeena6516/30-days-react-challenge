@@ -1,13 +1,12 @@
 import React from 'react';
 import "./stopwatch.css"
 import { useState, useEffect } from 'react';
-import { clear } from '@testing-library/user-event/dist/clear';
 
 
 const StopWatch = () => {
 
   const [hour, setHour] = useState(0);
-  const [min, setMin] = useState(59);
+  const [min, setMin] = useState(0);
   const [second, setSecond] = useState(0);
   const [milliSec, setMilliSec] = useState(0);
   const [stop, setStop] = useState(true);
